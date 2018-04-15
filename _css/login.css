@@ -1,0 +1,119 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body {
+      font: 400 15px Lato, sans-serif;      
+      line-height: 1.8; 
+      color: #818181;
+      margin-top: 25px;
+  }  
+  .r{
+    border: 2px solid #fff;  
+    border-radius: 50%;  
+    display: inline-block;   
+    background-color: transparent; 
+    margin-top: -10px;
+    border-color: #fff;
+    margin-right: 5px;
+    color: #fff; 
+    padding: 8px 13px;
+    font-size: 17px;
+    cursor: pointer;
+  }
+  .r:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+  }  
+
+.wrapper{
+    margin-top: 50px;
+}/*BORDA DA AREA DE LOGIN*/
+.form-signin{  
+  max-width: 420px;
+  padding: 30px 38px 50px;
+  margin: 0 auto;
+  border: 1px solid #cccccc;
+}
+.input-group{
+    height: 45px;
+    margin-bottom: 15px;
+    border-radius: 0px;
+    color: #888;
+}
+.form-control{
+    height: 45px;
+    color: #888;
+}
+.input-group:hover span i{
+    color: #000;
+}
+.btn-block{
+    border-radius: 0px;
+    margin-top: 25px;
+    background-color: #222;
+    border: none;
+}
+.btn-block:hover{
+    background-color: #555;
+}
+/* BOLA 
+.bol{
+    position: relative;
+    margin-top: -45px;
+    color: #222;
+}*/
+/* TAMANHO DA CHECKBOX*/
+#lembrarSenha{
+    width: 17px;
+    height: 17px;   
+}
+/*CENTRALIZAR CHECKBOX COM LEMBRAR-ME*/
+.form-group input{    
+    padding: 0;
+    margin:0;
+    vertical-align: center;
+    position: relative;
+    top: 4px;
+    overflow: hidden;
+}
+/*FORMATAÇÃO DO RODAPE*/
+#footer {
+    margin-top: 55PX;
+    /*border-top: 1PX solid #dcdcdc;*/
+    color: #6d6d6d;
+    font-size: 12px;
+    text-align: center;
+}
+#footer p {
+    margin-bottom: 0;
+}
+#footer a {
+    color: inherit;
+    padding-bottom:  10px;
+}
+#footer hr{
+    border-top: 1px solid #dcdcdc;
+}
+#esqueciSenha{  
+    font-size: 14px;
+}
+/*FORMATAÇÃO DO MODAL*/
+
+.btn-custom{
+    background-color: #222;
+    color: #fff;
+}
+.btn-custom:focus,
+.btn-custom:hover{
+    background-color: #555;
+    color: #fff;
+}
+.modal-header{
+    text-align: center;
+    background-color: #eee;
+}
+ .modal-dialog.modal-sm{
+    padding-top: 130px;
+  }
