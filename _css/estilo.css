@@ -27,6 +27,23 @@ body {
     outline: 0px auto -webkit-focus-ring-color;
     outline-offset: 0px;
   }  
+/*FORMATAÇÃO DO MENU*/
+.dropdown-menu li a{
+  background-color: #fff;
+}
+.dropdown-menu li a:hover{
+background-color: #eee;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a{
+  color: #222;
+  padding: 12px;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus, 
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover{
+  color: #222;
+  background-color: #eee;
+
+}
 /*FORMATAÇÃO DO RODAPE*/
 #footer {
     margin-top: 85PX;

@@ -80,9 +80,11 @@ class Usuarios
             $mysql->bindValue(':nome', $_POST['nome'],PDO::PARAM_STR);
             $mysql->bindValue(':email', $_POST['email'],PDO::PARAM_STR);
             $mysql->bindValue(':usuario', $_POST['usuario'],PDO::PARAM_STR);
-            $mysql->bindValue(':senha', $this->hash($_POST['senha']),PDO::PARAM_STR);
-            $mysql->execute();
-            header('Location: confirma-cadastro.html');
+            if($_POST['senha'] == $_POST['confirmarSenha']){
+                $mysql->bindValue(':senha', $this->hash($_POST['senha']),PDO::PARAM_STR);
+                $mysql->execute();
+                header('Location: cadastrar-usuario.php');
+            }
         }
     }
     

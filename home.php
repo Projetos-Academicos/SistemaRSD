@@ -42,7 +42,13 @@
 				<!-- LADO DIREITO DO MENU-->
 				<div class="collapse navbar-collapse" id="navigation">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Cadastrar</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Usuário</a>
+							<ul class="dropdown-menu">
+								<li><a href="cadastrar-usuario.php">Cadastrar</a></li>
+								<li><a href="#">Consultar</a></li>								
+							</ul>
+						</li>
 						<li><a href="#">Relatórios</a></li>
 						<li><a href="logout.php">Sair</a></li>
 					</ul>
