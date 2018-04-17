@@ -25,7 +25,7 @@ class Usuarios
             $usuario=$this->retUsuario($_POST['usuario']);
             if (crypt($_POST['senha'], $usuario['senha']) === $usuario['senha']) {
                 $_SESSION["usuario"] = $usuario;
-                if (!empty($_POST['lembrarSenha'])) {
+                if (!empty($_POST['lembrar'])) {
                     $this->lembrar($usuario['senha']);
                 }
             }
@@ -75,16 +75,21 @@ class Usuarios
     public function cadastrar()
     {
         if ($_SERVER['REQUEST_METHOD']=='POST') {
-            $sql='INSERT INTO `usuarios` (`nome`,`email`,`usuario`,`senha`) VALUES (:nome,:email,:usuario,:senha);';
+            $sql='INSERT INTO `usuarios` (`nome`,`cargo`,`perguntaSeguranca`,`respostaSeguranca`,`usuario`,`senha`) VALUES (:nome,:cargo,:pergunta,:resposta,:usuario,:senha);';
             $mysql=$this->mysql->prepare($sql);
             $mysql->bindValue(':nome', $_POST['nome'],PDO::PARAM_STR);
-            $mysql->bindValue(':email', $_POST['email'],PDO::PARAM_STR);
-            $mysql->bindValue(':usuario', $_POST['usuario'],PDO::PARAM_STR);
-            if($_POST['senha'] == $_POST['confirmarSenha']){
-                $mysql->bindValue(':senha', $this->hash($_POST['senha']),PDO::PARAM_STR);
-                $mysql->execute();
-                header('Location: cadastrar-usuario.php');
+            if ($_POST['cargo'] != "selecione") {
+                $mysql->bindValue(':cargo', $_POST['cargo'],PDO::PARAM_STR);
+                $mysql->bindValue(':pergunta', $_POST['pergunta'],PDO::PARAM_STR);
+                $mysql->bindValue(':resposta', $_POST['resposta'],PDO::PARAM_STR);
+                $mysql->bindValue(':usuario', $_POST['usuario'],PDO::PARAM_STR);
+                if($_POST['senha'] == $_POST['confirmarSenha']){
+                    $mysql->bindValue(':senha', $this->hash($_POST['senha']),PDO::PARAM_STR);
+                    $mysql->execute();
+                    header('Location: cadastrar-usuario.php');
+                }
             }
+        
         }
     }
     

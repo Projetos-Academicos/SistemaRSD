@@ -16,7 +16,7 @@
     background-color: #f1f1f1;
     border-radius: 8px;
     box-shadow: 0 1px 3px #c1c1c1;
-    padding: 20px 20px 40px;
+    padding: 20px 20px 70px;
 }
 .contact-form h3 {
     background-color: #222;
@@ -32,46 +32,18 @@
     padding: 18px;
 }
 
-.contact-form .btn-link { 
+.contact-form .btn-link {
+    margin-left: 20px;
     background: #222;    
     border-radius: 8px;
     color: #fff;
     cursor: pointer;
-    margin-top: 35px;
+    margin-top: 15px;
     padding: 8px 15px;
     text-align: center;
     transition: all 0.5s ease 0s;
-}span{
+}
+span{
     text-decoration: none;
     list-style: none;
 }
-@media (min-width: 992px){
-    .col-md-offset-4{
-        margin-left: 0;
-    }
-}@media screen and(min-width: 1200px){
-    .contact-form .btn-link{
-        margin-left: -200px;
-    }
-  .col-md-offset-4{
-        margin-left: 30%;
-    }
-}
-@media screen and (min-width: 550px){
-    .senha{
-        width: 49%;
-        display: inline-block;
-    }
-    input#senha{
-        width: 100%;
-        display: inline-block;
-    }
-}
-  .col-md-offset-4{
-        text-align: center; 
-    }
-.button.btn.btn-link.col-lg-4{
-        margin-left: 0;
-    }
-}
-

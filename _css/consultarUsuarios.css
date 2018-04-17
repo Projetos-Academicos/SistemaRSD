@@ -1,0 +1,28 @@
+
+body{
+margin-top: 115px;
+}
+#footer{
+	margin-top: 40px;
+}
+.btn-primary{
+	margin-top: 10px;
+	background-color: #222;
+	border-color: #444;
+	display: inline-block;	
+}
+.btn-primary:hover{
+	background-color: #555;
+}
+.col-md-5 input{	
+	width: 145px
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   
+    -webkit-appearance: none;
+    margin: 0; 
+}
+input[type=number] {
+    -moz-appearance:textfield;
+}

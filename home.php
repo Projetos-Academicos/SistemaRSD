@@ -46,7 +46,9 @@
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Usuário</a>
 							<ul class="dropdown-menu">
 								<li><a href="cadastrar-usuario.php">Cadastrar</a></li>
-								<li><a href="#">Consultar</a></li>								
+								<li><a href="consultar-usuarios.php">Consultar</a></li>	
+								<li><a href="editar-usuario.php">Editar</a></li>	
+								<li><a href="deletar-usuario.php">Deletar</a></li>								
 							</ul>
 						</li>
 						<li><a href="#">Relatórios</a></li>
@@ -57,98 +59,49 @@
 		</nav>
 	</div>	
 
-				<!-- PAGINA SOBRE (CONTEUDO SOBRE) -->
-	<div id="sobre" class="container-fluid">
+	<div class="col-md-12 col-md-offset-0">
 		<div class="row">
-			<div class="col-sm-8">
-				<h2>Um pouco sobre mim</h2><br>
-				<h4>Me chamo Ricardo Lima, tenho 20 anos, atualmente estou no 5º período da minha graduação em ciência da computação. Sou apaixonado pela área, principalmente em desenvolvimento de software, contudo busco sempre me aperfeiçoar não só em desenvolvimento, mas também nas demais áreas do curso.</h4><br>
-				<p>Apesar de ainda ser muito jovem, responsabilidade e comprometimento é um dos pontos em que mais enfatizo no desenvolvimento dos meus projetos acadêmicos, tornando-os o mais profissional possível. Atualmente busco ingressar-me no mercado de trabalho, preferencialmente na área de desenvolvimento, como estagiário ou trainee para adquirir experiência e vivência, unindo e aperfeiçoando cada vez mais a teoria e a prática.</p>
-				
-			</div>
-			<div class="col-sm-4">
-				<span class="glyphicon glyphicon-user logo"></span>
-			</div>
+			<div class="col-md-4 col-md-offset-0"><h2>HOME PAGE</h2></div>
+			<div class="col-md-4 col-md-offset-0"><h2>HOME PAGE</h2></div>
+			<div class="col-md-4 col-md-offset-0"><h2>HOME PAGE</h2></div>
+		</div>	
+		<div class="row">
+			<div class="col-md-4 col-md-offset-0"><h2>HOME PAGE</h2></div>
+			<div class="col-md-4 col-md-offset-0"><h2>HOME PAGE</h2></div>
+			<div class="col-md-4 col-md-offset-0"><h2>HOME PAGE</h2></div>
 		</div>
+		<div class="row">
+			<div class="col-md-4 col-md-offset-0"><h2>HOME PAGE</h2></div>
+			<div class="col-md-4 col-md-offset-0"><h2>HOME PAGE</h2></div>
+			<div class="col-md-4 col-md-offset-0"><h2>HOME PAGE</h2></div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-md-offset-0"><h2>HOME PAGE</h2></div>
+			<div class="col-md-4 col-md-offset-0"><h2>HOME PAGE</h2></div>
+			<div class="col-md-4 col-md-offset-0"><h2>HOME PAGE</h2></div>
+		</div>	
+		<div class="row">
+			<div class="col-md-4 col-md-offset-0"><h2>HOME PAGE</h2></div>
+			<div class="col-md-4 col-md-offset-0"><h2>HOME PAGE</h2></div>
+			<div class="col-md-4 col-md-offset-0"><h2>HOME PAGE</h2></div>
+		</div>	
+		<div class="row">
+			<div class="col-md-4 col-md-offset-0"><h2>HOME PAGE</h2></div>
+			<div class="col-md-4 col-md-offset-0"><h2>HOME PAGE</h2></div>
+			<div class="col-md-4 col-md-offset-0"><h2>HOME PAGE</h2></div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-md-offset-0"><h2>HOME PAGE</h2></div>
+			<div class="col-md-4 col-md-offset-0"><h2>HOME PAGE</h2></div>
+			<div class="col-md-4 col-md-offset-0"><h2>HOME PAGE</h2></div>
+		</div>	
+		<div  id="espaco" class="row">
+			<div class="col-md-4 col-md-offset-0"><h2>HOME PAGE</h2></div>
+			<div class="col-md-4 col-md-offset-0"><h2>HOME PAGE</h2></div>
+			<div class="col-md-4 col-md-offset-0"><h2>HOME PAGE</h2></div>
+		</div>
+		<br/>	
 	</div>
-
-<!-- CURRICULO (CONTEUDO CURRICULO) -->
-	<div id="curriculo" class="container-fluid">
-		<div class="text-center">
-			<h2>CURRICULO</h2>
-			<h4>Curriculo academico</h4>
-		</div>
-		<div class="row slideanim">		    
-			<div class="col-sm-3">
-				<h4>Programação:</h4>
-				<ul>
-					<li>Logica de Programação;</li>
-					<li>Programação Orientada a Objeto;</li>
-					<li>Padrão MVC;</li>
-					<li>Java;</li>
-					<li>C#</li>			   		
-				</ul>
-			</div>	
-			<div class="col-sm-3">
-				<h4>Desenvolvimento Web:</h4>				
-				<ul>
-					<li>HTML;</li>
-					<li>CSS;</li>
-					<li>Bootstrap;</li>
-					<li>PHP;</li>	
-					<li>JavaScript;</li>	
-				</ul>
-			</div>			
-			<div class="col-sm-3">
-				<h4>Banco de Dados:</h4>
-				<ul>
-					<li>MySQL;</li>
-					<li>SQL Server;</li>
-					<li>Access 2016;</li>
-					<li>JPA;</li>
-					<li>Hibernate;</li>							   		
-				</ul>
-			</div>		
-			<div class="col-sm-3">
-				<h4>Engenharia de Software:</h4>
-				<ul>
-					<li>Diagrama de Classes;</li>
-					<li>Diagrama de Casos de Usos;</li>
-					<li>Histórias dos Usuários;</li>
-					<li>Scrum;</li>
-					<li>PMBOK;</li>
-					<li>Redmine;</li>							   		
-				</ul>
-			</div>			
-			<div class="col-sm-3">					
-				<h4>Ambiente de Desenvolvimento (IDE):</h4>
-				<ul>
-					<li>NetBeans;</li>
-					<li>Eclipse;</li>
-					<li>Visual Studio;</li>
-					<li>WorkBench;</li>							   		
-				</ul>						
-			</div>	
-			<div class="col-sm-3">
-				<h4>Conhecimentos Adicionais:</h4>
-				<ul>
-					<li>Git e GitHub;</li>
-					<li>Wamp Server;</li>
-					<li>Inglês Básico;</li>			   		
-				</ul>
-			</div>	  
-		</div>
-	</div>
-
-
-
-
-
-
-
-
-
-
 
     <!-- RODAPE -->
     

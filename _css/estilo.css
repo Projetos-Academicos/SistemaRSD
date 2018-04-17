@@ -59,7 +59,7 @@ background-color: #eee;
     color: inherit;
     padding-bottom:  10px;
 }
-#footer hr{
+#footer hr#hrpe{
     border-top: 1px solid #dcdcdc;
 }
 
